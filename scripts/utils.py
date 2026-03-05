@@ -58,7 +58,7 @@ def run_fab_command(
     
     result = subprocess.run(
         f"fab {command}",
-        capture_output=capture_output,
+        capture_output=True, #capture_output=capture_output,
         text=True,
         shell=True
     )
